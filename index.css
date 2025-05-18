@@ -28,6 +28,9 @@ header > h1 {
 
 main {
     padding: 30px 30px 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .add-ingredient-form {
@@ -62,3 +65,63 @@ main {
     content: "+";
     margin-right: 5px;
 }
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    font-family: Inter, sans-serif;
+}
+
+.ingredient-list > ul{
+    text-align: left;
+    list-style-position: outside;
+    padding-left: 1rem;
+    font-family: Inter, sans-serif;
+}
+
+.get-recipe-container {
+    font-family: Inter, sans-serif;
+    border-radius: 15px;
+    border: none;
+    background-color: #E0E0E0;
+    display: flex;  
+    align-items: center;
+    gap: 20px; 
+    justify-content: space-between; 
+    padding: 0 1rem;
+}
+
+.get-recipe-container > div {
+    flex: 1; 
+    margin-right: 1rem;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 45px;
+}
+
+ul > li {
+    line-height: 2;
+}
+
+h3 {
+    font-weight: 400; 
+}
+
+p {
+    font-weight: 300;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.get-recipe-container > button {
+    flex-shrink: 0;
+    padding: 10px 16px;
+    color: white;
+    background-color: darkorange; 
+    border: none;
+    border-radius: 10px;
+}
+
